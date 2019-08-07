@@ -1,0 +1,9 @@
+<%= form_for @number do |f| %>
+  <div class="form-group">
+    <p>Create number</p>
+    <%= f.text_field :number, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit @number, class: "btn btn-light" %>
+  </div>
+<% end %>

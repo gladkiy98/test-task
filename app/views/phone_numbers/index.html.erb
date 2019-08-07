@@ -1,0 +1,7 @@
+<%= link_to 'Custom number', new_phone_number_path, class: 'navbar-brand' %>
+<%= link_to 'Generate number', new_phone_number_path(generate: true), class: 'navbar-brand' %>
+
+<% @numbers.each do |number| %>
+  <%= number.number %>
+
+<% end %>
